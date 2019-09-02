@@ -5,6 +5,8 @@
  */
 package uabcscoin;
 
+import controller.CtrlLogin;
+
 /**
  *
  * @author Alumno
@@ -15,7 +17,10 @@ public class Uabcscoin {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO code application logic her
+        VLogin view = new VLogin();
+        CtrlLogin controller = new CtrlLogin(view);
+        controller.init();
     }
     
 }
